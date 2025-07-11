@@ -50,7 +50,7 @@ if uploaded_file is not None:
 
     # load labels mapping from metadata.csv
     df = pd.read_csv("metadata.csv")
-    labels = df["dx"].unique()
+    labels = sorted(df["dx"].unique())
 
     # map predicted index to actual label
     predicted_label = labels[prediction]
