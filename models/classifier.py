@@ -109,7 +109,7 @@ def main():
     # TODO: should probably change the learning rate per layer, bit weird though
     optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=1e-2)
     loss_fn = torch.nn.CrossEntropyLoss()
-    epochs = 20
+    epochs = 5
 
     print("Starting...")
     # TODO: should probably add some scheduler to prevent any overfitting
